@@ -1,7 +1,3 @@
-# PDF 配線表処理フロー
-
-以下は、PDFから配線表を抽出してExcel/JSONに出力する処理フローです。
-
 ```mermaid
 flowchart TD
     %% === PDF読み込み ===
