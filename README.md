@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     %% === PDF読み込み ===
     A[PDF読み込み<br>/mnt/data/通信線配線表.pdf] --> B[テキスト行抽出]
