@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
 
     %% === PDF読み込み ===
