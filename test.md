@@ -1,7 +1,8 @@
-```mermaid
 flowchart TD
+
     %% === PDF読み込み ===
-    A[PDF読み込み<br>/mnt/data/通信線配線表.pdf] --> B[テキスト行抽出]
+    A[PDF読み込み<br>/mnt/data/通信線配線表.pdf]
+    A --> B[テキスト行抽出]
 
     %% === 上段処理 ===
     subgraph 上段情報抽出
@@ -32,24 +33,3 @@ flowchart TD
     class C,D,E,F upper
     class G,H,I lower
     class J,K output
-
-    %% === データ構造（補助） ===
-    class Record record;
-    classDef record fill:#f9f,stroke:#333,stroke-width:1px;
-    class Record{
-        +PKG: str
-        +SLOT: str
-        +対向装置: str
-        +対向装置番号: str
-        +対向PKG: str
-        +対向SLOT: str
-        +備考: str
-        +ビル: str
-        +フロア: str
-        +群: str
-        +架番号: str
-        +装置: str
-        +装置番号: str
-        +図面名: str
-    }
-    Record --> J : 複数レコード
